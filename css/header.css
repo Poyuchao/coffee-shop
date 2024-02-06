@@ -1,0 +1,88 @@
+header {
+    position: relative;
+    padding-bottom: 5rem;
+    background-color: black;
+   
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/index-header-2.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.85;
+    /* flip background image to make words clear */
+    transform: scaleX(-1);
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .icon-container {
+    width: 20%;
+    display: flex;
+    padding-top: 5px;
+  }
+  
+  .header-icon {
+    width: 6rem;
+    height: auto;
+  }
+  
+  nav {
+    width: 60%;
+    right: 8%;
+    top: 5%;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .nav-li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* RWD: 1. align-items: center  ;  2. Left 50% + transform: translateX(-50%)*/
+  .header-words {
+    width: 50%;
+    min-width: 30rem;
+    position: relative;
+    left: 6%;
+    margin-top: 5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .header-words > h1 {
+    font-size: 3rem;
+  }
+  
+  .header-order-button {
+    text-align: center;
+    width: 35%;
+    border-radius: 10px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: #b77e66;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+  }

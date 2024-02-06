@@ -1,19 +1,17 @@
 footer {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.8), /* Increased alpha value to 0.8 to make it darker */
-        rgba(0, 0, 0, 0.8)
-    ), url('../img/footer.png') center no-repeat;
-    background-size:cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+            /* Increased alpha value to 0.8 to make it darker */
+            rgba(0, 0, 0, 0.8)), url('../img/footer.png') center no-repeat;
+    background-size: cover;
     color: white;
-    padding:18% 0;
-    opacity:1;
+    padding: 8% 0;
+    opacity: 1;
 }
 
-.footer-container{
-    display:flex;
-    justify-content:space-around;
- 
-    padding:0 10%;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
 }
 
 
@@ -22,6 +20,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
 }
 
 .footer-section2 {
@@ -31,16 +30,24 @@ footer {
 }
 
 .footer-section1 h4,
-.footer-section2 h4{
+.footer-section2 h4 {
     margin: 0;
-    padding: 7px 0; 
-    cursor: pointer; 
+    padding: 7px 0;
+    cursor: pointer;
+
 }
 
+.footer-section1 a,
+.footer-section2 a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
 
 /* copy section */
 .footer-copy {
     text-align: center;
-    margin-top: 100px; /* Adjust as necessary */
+    margin-top: 200px;
+    /* Adjust as necessary */
     opacity: 0.7;
 }
