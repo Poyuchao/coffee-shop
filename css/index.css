@@ -1,0 +1,60 @@
+header {
+    position: relative;
+    background-image: url(./img/index-header-2.png);
+    background-size: cover;
+    background-color: black;
+  }
+  
+  .header-icon {
+    width: 6rem;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+  
+  nav {
+    position: absolute;
+    width: 50%;
+    right: 8%;
+    top: 5%;
+  }
+  
+  nav > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+  
+  .nav-li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .header-words {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .header-words > h1 {
+    font-size: 3rem;
+  }
+  
+  .header-order-button {
+    text-align: center;
+    width: 25%;
+    border-radius: 10px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: #b77e66;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+  }
