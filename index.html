@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Index</title>
+    <title>BARTONS Cafe | Index</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./index.css" />
@@ -21,12 +21,12 @@
           </div>
           <nav>
             <ul>
-              <li class="nav-li">Home</li>
-              <li class="nav-li">About</li>
-              <li class="nav-li">Menu</li>
-              <li class="nav-li">Products</li>
-              <li class="nav-li">News</li>
-              <li class="nav-li">Location</li>
+              <li class="nav-li"><a href="./index.html">Home</a></li>
+              <li class="nav-li"><a href="">About</a></li>
+              <li class="nav-li"><a href="">Menu</a></li>
+              <li class="nav-li"><a href="">Products</a></li>
+              <li class="nav-li"><a href="">News</a></li>
+              <li class="nav-li"><a href="./location.html">Location</a></li>
             </ul>
           </nav>
         </div>
@@ -44,7 +44,7 @@
 
       <!-- Welcome part START -->
       <section class="section-welcome">
-        <div>
+        <div class="welcome-words-container">
           <h3>Welcome to Bartons incredibly</h3>
           <p>
             Your best local coffee. In addition to delicious sandwiches and
@@ -58,17 +58,17 @@
       <!-- Opening hour part START -->
       <section class="section-openinghour">
         <h1>Opening Hours</h1>
-        <div>
+        <div class="openinghour-words-container">
           <div>
             <h3>Mon-Thu</h3>
             <p>08:00-18:00</p>
           </div>
           <div>
-            <h3>Fri</h3>
-            <p>08:00-19:00</p>
+            <h3>Sun</h3>
+            <p>8:00-19:00</p>
           </div>
           <div>
-            <h3>Sun</h3>
+            <h3>Fri</h3>
             <p>9:00-18:00</p>
           </div>
           <div>
@@ -83,49 +83,59 @@
       <section class="section-ourmenu">
         <h1>Our Menu</h1>
         <h3>Coffee</h3>
-        <div>
-          <img src="" alt="" />
-          <h3>Cappacino</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
-            fermentum id id vitae, integer fermentum tellus. In vitae id nisl
-            quis ornare diam commodo in vel dolor.
-          </p>
-          <h4>$8.60</h4>
-          <a href="">Order now</a>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h3>Mocha</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
-            fermentum id id vitae, integer fermentum tellus. In vitae id nisl
-            quis ornare diam commodo in vel dolor.
-          </p>
-          <h4>$9.20</h4>
-          <a href="">Order now</a>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h3>Latte</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
-            fermentum id id vitae, integer fermentum tellus. In vitae id nisl
-            quis ornare diam commodo in vel dolor.
-          </p>
-          <h4>$11.40</h4>
-          <a href="">Order now</a>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h3>Cold Java</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
-            fermentum id id vitae, integer fermentum tellus. In vitae id nisl
-            quis ornare diam commodo in vel dolor.
-          </p>
-          <h4>$6.40</h4>
-          <a href="">Order now</a>
+        <div class="ourmenu-words-container">
+          <div class="ourmenu-coffee">
+            <img src="./img/index-img-1.png" alt="" />
+            <h3>Cappacino</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
+              fermentum id id vitae, integer fermentum tellus. In vitae id nisl
+              quis ornare diam commodo in vel dolor.
+            </p>
+            <div class="ourmenu-price-button-container">
+              <h4>$8.60</h4>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div class="ourmenu-coffee">
+            <img src="./img/index-img-2.png" alt="" />
+            <h3>Mocha</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
+              fermentum id id vitae, integer fermentum tellus. In vitae id nisl
+              quis ornare diam commodo in vel dolor.
+            </p>
+            <div class="ourmenu-price-button-container">
+              <h4>$9.20</h4>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div class="ourmenu-coffee">
+            <img src="./img/index-img-3.png" alt="" />
+            <h3>Latte</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
+              fermentum id id vitae, integer fermentum tellus. In vitae id nisl
+              quis ornare diam commodo in vel dolor.
+            </p>
+            <div class="ourmenu-price-button-container">
+              <h4>$11.40</h4>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div class="ourmenu-coffee">
+            <img src="./img/index-img-4.png" alt="" />
+            <h3>Cold Java</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa,
+              fermentum id id vitae, integer fermentum tellus. In vitae id nisl
+              quis ornare diam commodo in vel dolor.
+            </p>
+            <div class="ourmenu-price-button-container">
+              <h4>$6.40</h4>
+              <a href="">Order now</a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Our Menu part END -->
@@ -133,29 +143,53 @@
       <!-- Customers START -->
       <section class="section-customers">
         <h1>What our Customers</h1>
-        <div>
-          <img class="portrait" src="" alt="" />
-          <img class="star" src="" alt="" />
+        <div class="customers-word-container">
+          <img class="customer-portrait" src="./img/index-img-5.png" alt="" />
+          <div class="customer-stars">
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+          </div>
           <h3>As good as advertised</h3>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,”</p>
-          <p>Mrs Catherine White</p>
-          <p>44 Hours Ago</p>
+          <p class="customer-review">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit,”
+          </p>
+          <p class="customer-name">Mrs Catherine White</p>
+          <p class="customer-time">44 Hours Ago</p>
         </div>
-        <div>
-          <img class="portrait" src="" alt="" />
-          <img class="star" src="" alt="" />
+        <div class="customers-word-container">
+          <img class="customer-portrait" src="./img/index-img-6.png" alt="" />
+          <div class="customer-stars">
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+          </div>
           <h3>As good as advertised</h3>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,”</p>
-          <p>Mrs Catherine White</p>
-          <p>44 Hours Ago</p>
+          <p class="customer-review">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit,”
+          </p>
+          <p class="customer-name">Mrs Catherine White</p>
+          <p class="customer-time">44 Hours Ago</p>
         </div>
-        <div>
-          <img class="portrait" src="" alt="" />
-          <img class="star" src="" alt="" />
+        <div class="customers-word-container">
+          <img class="customer-portrait" src="./img/index-img-5.png" alt="" />
+          <div class="customer-stars">
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+            <img class="star" src="./icon/start.png" alt="" />
+          </div>
           <h3>As good as advertised</h3>
-          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit,”</p>
-          <p>Mrs Catherine White</p>
-          <p>44 Hours Ago</p>
+          <p class="customer-review">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit,”
+          </p>
+          <p class="customer-name">Mrs Catherine White</p>
+          <p class="customer-time">44 Hours Ago</p>
         </div>
       </section>
       <!-- Customers END -->
