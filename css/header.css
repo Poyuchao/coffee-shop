@@ -1,8 +1,8 @@
 header {
+  header {
     position: relative;
     padding-bottom: 5rem;
-    background-color: black;
-   
+    height: 100vh;
   }
   
   header::before {
@@ -52,20 +52,21 @@ header {
     justify-content: space-around;
   }
   
-  .nav-li {
+  .nav-li,
+  .nav-li > a {
     text-decoration: none;
     list-style: none;
     color: white;
     text-transform: uppercase;
   }
   
-  /* RWD: 1. align-items: center  ;  2. Left 50% + transform: translateX(-50%)*/
+  /* RWD: 1. align-items: center  ;  2. Left 50% + transform: translateX(-50%)  ;  3. h1 font-size decrease*/
   .header-words {
     width: 50%;
     min-width: 30rem;
     position: relative;
     left: 6%;
-    margin-top: 5rem;
+    top: 25vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@ header {
   }
   
   .header-words > h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   
   .header-order-button {
