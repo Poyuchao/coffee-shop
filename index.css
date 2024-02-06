@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: solid 1px black;
+  background-color: #020ef833; */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------- */
+
+.section-welcome {
+  background-image: url(../img/index-bg-1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------- */
+
+.section-openinghour {
+  background-image: url(../img/index-bg-2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------- */
+
+.section-ourmenu {
+  background-image: url(../img/index-bg-3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------- */
+
+.section-customers {
+  background-image: url(../img/index-bg-4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------- */
+
+.section-map {
+  background-color: #e3d9d5;
+}
