@@ -1,17 +1,22 @@
 .nav-bar {
-    position: relative;
-    background-color: rgba(30, 21, 17, 0.91);
-    /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)): 
-    This creates a gradient that starts and ends with the same color—semi-transparent black.
-    Since the start and end colors are the same, 
-    it effectively produces a solid semi-transparent overlay. 
-    The rgba color value includes an alpha channel, which controls the opacity, 
-    set to 0.5 or 50% in this case. This means that the black color will
-    overlay the image with 50% opacity, darkening the background image. */
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/nav.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-color: rgba(30, 21, 17, 0.91);
+  z-index: 1;
+}
+
+.nav-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 69.725px;
+  width: 100%;
+  background-image: url(../img/nav.png);
+  background-repeat: none;
+  background-position: center;
+  z-index: -2;
+  opacity: 0.85;
 }
   
   
@@ -21,31 +26,33 @@
   .contact-section{
     padding:40px 0;
     width:100%;
-    height:720px;
-    background: linear-gradient(rgba(241, 235, 235, 0.2), rgba(250, 250, 250, 0.8)), url('../img/contact-bg-1.png');
- 
-    
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    height:880px;
+  
   }
 
   .contact-title{
+    color: #AF6343;
+    position:relative;
+    right:6%;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 1.2rem;
   }
 
   .feedback-form-container{
-
+    color: #AF6343;
     display:flex;
     gap:2rem;
+    width:100%;
+    height:80%;
   }
 
   .feedback{
-    width:30%;
+    width:40%;
+    height: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+   
+  
+ 
   }
 
   .feedback-container{
@@ -53,7 +60,9 @@
     margin-left: 30%;
     display: flex;
     flex-direction: column;
-    gap:10px;
+  
+    padding:5px;
+    gap:4px;
     
   }
 
@@ -61,23 +70,65 @@
     text-transform: capitalize;
   }
 
-  /* .contact-form {
-    
-    margin: auto;
-    padding: 20px;
+
+
+.contact-form{
+  width:70%;
+  
+}
+.contact-form form{
+  margin-top:10px;
+  position:relative;
+  background: linear-gradient(rgba(241, 235, 235, 0.2), rgba(250, 250, 250, 0.8)), url('../img/contact-bg-1.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display:flex;
+  flex-direction: column;
+  justify-self: start;
+  width:80%;
+  height:100%;
+  gap:25px;
+
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 25px;
+    border: 1px solid #AF6343;;
+    border-radius: 10px;
+    box-sizing: border-box; /* ensures padding doesn't affect overall width */
+    font-size:1rem;
+}
+
+.contact-form textarea {
+  height: 300px; /* or any height you prefer */
+  min-height: 100px; /* minimum height when resizing */
+  resize: vertical; /* allows the user to resize vertically */
+  /* other styles remain the same */
+  opacity: 0.6;
+}
+
+
+.contact-form form label[for="name"],
+.contact-form form label[for="email"],
+.contact-form form label[for="subject"] {
+  font-weight: bold; /* Makes the text bold */
+  line-height: 2; /* Adjusts the spacing of lines */
+  opacity:0.6;
   
 }
 
-.contact-form form {
-    display: grid;
-    grid-gap: 20px;
+.contact-form form button {
+  position:absolute;
+  bottom:0;
+  background-color:  #AF6343;; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 10px;
+  padding: 18px 20px;
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  width:20%;
+  white-space: nowrap;
 }
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-} */
-
-
-
-
