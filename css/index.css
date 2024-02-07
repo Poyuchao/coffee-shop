@@ -269,4 +269,14 @@ body {
 .section-map {
   background-color: #e3d9d5;
   height: 30rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+}
+
+.section-map > iframe {
+  width: 95%;
+  height: 95%;
 }
