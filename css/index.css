@@ -123,26 +123,49 @@ body {
   font-size: 2rem;
 }
 
-.section-ourmenu > h3 {
+.section-ourmenu > h2 {
   color: #9e5a3d;
   width: 100%;
   text-decoration: underline;
-  padding-left: 15%;
+  padding-left: 21%;
+ 
 }
 
 .ourmenu-words-container {
+  width:1200px;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  height:80%;
+  gap: 1rem;
+
+  overflow-x:scroll;
 }
+/* remove the scrollbar */
+.ourmenu-words-container::-webkit-scrollbar{
+  display:none;
+}
+
+.ourmenu-words-wrap{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:1% auto;
+}
+
+/* control button */
+#backBtn, #nextBtn{
+  width:50px;
+  cursor:pointer;
+  margin:20px
+}
+
+
 
 .ourmenu-coffee {
   width: 15%;
-  min-width: 10rem;
+  min-width: 18rem;
   background-color: rgba(115, 74, 57, 0.8);
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +175,15 @@ body {
 
 .ourmenu-coffee > img {
   width: 100%;
+  height: 150px;
   border-radius: 10px;
+  transition:transform 0,5s;
+}
+
+.ourmenu-coffee >img:hover{
+
+  cursor:pointer;
+  transform: scale(1.07);
 }
 
 .ourmenu-coffee > h3 {
@@ -163,9 +194,10 @@ body {
 .ourmenu-coffee > p {
   width: 100%;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #fffada;
   font-weight: 100;
+  margin-bottom: 20px;
 }
 
 .ourmenu-price-button-container {
@@ -202,8 +234,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   gap: 1rem;
+  height:450px;
 }
 
 .section-customers > h1 {
@@ -245,6 +278,7 @@ body {
 
 .customer-stars > img {
   width: 12px;
+  
 }
 
 .customers-word-container > h3 {
@@ -269,14 +303,11 @@ body {
 .section-map {
   background-color: #e3d9d5;
   height: 30rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 1rem;
+  padding:20px;
+  
 }
 
-.section-map > iframe {
-  width: 95%;
-  height: 95%;
+.googlemap{
+  border:solid 10px rgba(88, 49, 21, 0.57);
 }
+
